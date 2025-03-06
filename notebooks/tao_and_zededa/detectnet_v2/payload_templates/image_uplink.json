@@ -1,0 +1,30 @@
+{
+  "id": "84c93316-f96d-457f-887f-8e7fbd29bd8d",
+  "name": "testimageDeleteAtWill",
+  "title": "testimageDeleteAtWill",
+  "description": "",
+  "revision": {
+    "prev": "",
+    "curr": "1",
+    "createdAt": "2025-02-27T19:55:57.647902Z",
+    "createdBy": "cshari@acme.com",
+    "updatedAt": "2025-02-27T19:55:57.647902Z",
+    "updatedBy": "cshari@acme.com"
+  },
+  "imageFormat": "CONTAINER",
+  "imageRelUrl": "testimageDeleteAtWill",
+  "imageSha256": "",
+  "imageVersion": "",
+  "imageArch": "ARM64",
+  "imageStatus": "IMAGE_STATUS_CREATED",
+  "imageType": "IMAGE_TYPE_APPLICATION",
+  "datastoreId": "3cab4346-c46d-46ca-b699-65c998ae7dd9",
+  "imageError": "",
+  "imageLocal": "",
+  "originType": "ORIGIN_LOCAL",
+  "projectAccessList": [],
+  "datastoreIdList": [
+    "3cab4346-c46d-46ca-b699-65c998ae7dd9"
+  ],
+  "isLTS": false
+}

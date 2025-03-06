@@ -1,0 +1,30 @@
+{
+  "name": "demo",
+  "appId": "fb7fcbd6-e33c-4446-b955-286e49807713",
+  "title": "demo",
+  "startDelayInSeconds": 0,
+  "deviceId": "48c78d24-b8a2-4863-a526-69cda2357b60",
+  "projectId": "2f0f4094-62fa-44f6-b280-75ff37f9d470",
+  "edgeNodeCluster": null,
+  "logs": {
+    "access": true
+  },
+  "drives": [],
+  "interfaces": [
+    {
+      "intforder": 1,
+      "intfname": "nic",
+      "directattach": false,
+      "netinstname": "defaultLocal-Aetina-AIE-PX22",
+      "ipaddr": "10.2.0.3",
+      "macaddr": "",
+      "accessVlanId": 0,
+      "defaultNetInstance": false,
+      "netinsttag": {},
+      "acls": [],
+      "io": null
+    }
+  ],
+  "activate": true,
+  "tags": {}
+}

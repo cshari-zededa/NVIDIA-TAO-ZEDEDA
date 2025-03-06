@@ -1,0 +1,41 @@
+{
+  "name": "zededa-tritonserver-instance_v7",
+  "appId": "2dd74659-288e-4a3d-80f7-397ff07a5bb4",
+  "title": "zededa-tritonserver-instance_v7",
+  "startDelayInSeconds": 0,
+  "deviceId": "48c78d24-b8a2-4863-a526-69cda2357b60",
+  "projectId": "2f0f4094-62fa-44f6-b280-75ff37f9d470",
+  "edgeNodeCluster": null,
+  "logs": {
+    "access": true
+  },
+  "drives": [],
+  "interfaces": [
+    {
+      "intforder": 1,
+      "intfname": "nic",
+      "directattach": false,
+      "netinstname": "defaultLocal-Aetina-AIE-PX22",
+      "ipaddr": "10.2.0.2",
+      "macaddr": "",
+      "accessVlanId": 0,
+      "defaultNetInstance": false,
+      "netinsttag": {},
+      "acls": [],
+      "io": null
+    },
+    {
+      "intforder": 2,
+      "intfname": "GPU",
+      "directattach": true,
+      "io": {
+        "name": "GPU1",
+        "type": "IO_TYPE_HDMI",
+        "tags": {}
+      },
+      "netinstname": null
+    }
+  ],
+  "activate": true,
+  "tags": {}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "prometheus",
+  "appId": "32aad90c-4a24-43cd-bf45-42ff4910e2cb",
+  "title": "prometheus",
+  "startDelayInSeconds": 0,
+  "deviceId": "b8bc5916-8107-49c1-9310-27b7668f290a",
+  "projectId": "2f0f44-62fa-44f6-b280-75ff37f9d470",
+  "edgeNodeCluster": null,
+  "logs": {
+    "access": true
+  },
+  "drives": [],
+  "interfaces": [
+    {
+      "intforder": 1,
+      "intfname": "nic",
+      "directattach": false,
+      "netinstname": "defaultLocal-Aetina-AIE-KN32",
+      "ipaddr": "10.2.0.4",
+      "macaddr": "",
+      "accessVlanId": 0,
+      "defaultNetInstance": false,
+      "netinsttag": {},
+      "acls": [],
+      "io": null
+    }
+  ],
+  "activate": true,
+  "tags": {}
+}

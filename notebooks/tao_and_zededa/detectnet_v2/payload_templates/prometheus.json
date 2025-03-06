@@ -1,0 +1,59 @@
+{
+  "name": "nvidia_triton_profile-prometheus-px22",
+  "appId": "84a7b860-8449-413c-9938-e5773b9edd91",
+  "title": "nvidia_triton_profile-prometheus-px22",
+  "startDelayInSeconds": 0,
+  "deviceId": "48c78d24-b8a2-4863-a526-69cda2357b60",
+  "projectId": "2f0f4094-62fa-44f6-b280-75ff37f9d470",
+  "edgeNodeCluster": null,
+  "logs": {
+    "access": true
+  },
+  "customConfig": {
+    "name": "CustomConfigApp",
+    "add": true,
+    "override": false,
+    "allowStorageResize": false,
+    "fieldDelimiter": "$",
+    "template": "SE9TVE5BTUU9JEhPU1ROQU1FJA==",
+    "variableGroups": [
+      {
+        "name": "Variable-Group-0",
+        "variables": [
+          {
+            "type": "",
+            "name": "HOSTNAME",
+            "label": "HOSTNAME",
+            "maxLength": "",
+            "required": true,
+            "default": "GrafanaAlloy",
+            "processInput": "",
+            "value": "GrafanaAlloy-px22",
+            "format": "VARIABLE_FORMAT_TEXT",
+            "encode": "FILE_ENCODING_UNSPECIFIED"
+          }
+        ],
+        "required": true,
+        "condition": null
+      }
+    ]
+  },
+  "drives": [],
+  "interfaces": [
+    {
+      "intforder": 1,
+      "intfname": "nic",
+      "directattach": false,
+      "netinstname": "EdgeAI-NetInstance-Aetina-AIE-PX22",
+      "ipaddr": "10.3.0.4",
+      "macaddr": "",
+      "accessVlanId": 0,
+      "defaultNetInstance": false,
+      "netinsttag": {},
+      "acls": [],
+      "io": null
+    }
+  ],
+  "activate": true,
+  "tags": {}
+}

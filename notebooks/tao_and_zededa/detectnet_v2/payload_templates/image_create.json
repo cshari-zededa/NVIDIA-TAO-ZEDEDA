@@ -1,0 +1,14 @@
+{
+  "originType": "ORIGIN_LOCAL",
+  "imageType": "IMAGE_TYPE_APPLICATION",
+  "datastoreIdList": [
+    "3cab4346-c46d-46ca-b699-65c998ae7dd9"
+  ],
+  "name": "",
+  "title": "asdfsdf",
+  "imageFormat": "CONTAINER",
+  "imageArch": "ARM64",
+  "projectAccessList": [],
+  "imageRelUrl": "csharizededa/tritonserver:4.0",
+  "imageSizeBytes": 0
+}

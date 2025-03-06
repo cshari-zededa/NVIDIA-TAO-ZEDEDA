@@ -1,0 +1,120 @@
+{
+  "name": "triton-app-test",
+  "title": "triton-app-test",
+  "description": "",
+  "networks": 1,
+  "drives": 1,
+  "cpus": 2,
+  "memory": 2097152,
+  "manifestJSON": {
+    "acKind": "PodManifest",
+    "acVersion": "1.2.0",
+    "deploymentType": "DEPLOYMENT_TYPE_STAND_ALONE",
+    "name": "triton-app-test",
+    "owner": {
+      "user": "Audodeployed",
+      "group": "",
+      "company": "Zededa Inc",
+      "website": "www.zededa.com",
+      "email": "cshari@zededa.com"
+    },
+    "description": "",
+    "cpuPinningEnabled": false,
+    "images": [
+      {
+        "imagename": "EdgeImpulse-App-arm64",
+        "imageid": "c0c53075-2587-49ee-b24b-6074722179ef",
+        "imageformat": "CONTAINER",
+        "preserve": false,
+        "target": "",
+        "drvtype": "",
+        "params": [],
+        "readonly": false,
+        "volumelabel": "",
+        "ignorepurge": false,
+        "cleartext": true,
+        "mountpath": "/"
+      }
+    ],
+    "interfaces": [
+      {
+        "name": "nic",
+        "directattach": false,
+        "acls": [
+          {
+            "matches": [
+              {
+                "type": "ip",
+                "value": "0.0.0.0/0"
+              }
+            ]
+          },
+          {
+            "matches": [
+              {
+                "type": "protocol",
+                "value": "tcp"
+              },
+              {
+                "type": "lport",
+                "value": "5090"
+              },
+              {
+                "type": "ip",
+                "value": "0.0.0.0/0"
+              }
+            ],
+            "actions": [
+              {
+                "portmap": true,
+                "portmapto": {
+                  "appPort": 5090
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "desc": {
+      "category": "APP_CATEGORY_DATA_ANALYTICS",
+      "appCategory": "APP_CATEGORY_UNSPECIFIED",
+      "support": "",
+      "logo": {
+        "logo": "5197ffba-2ed5-11ef-8154-028e313eda78_logo"
+      },
+      "licenseList": {},
+      "agreementList": {}
+    },
+    "vmmode": "HV_PV",
+    "enablevnc": true,
+    "resources": [
+      {
+        "name": "resourceType",
+        "value": "Custom"
+      },
+      {
+        "name": "cpus",
+        "value": "2"
+      },
+      {
+        "name": "memory",
+        "value": "1048576.00"
+      }
+    ],
+    "configuration": {
+      "customConfig": {
+        "name": "CustomConfigApp",
+        "add": false,
+        "override": false,
+        "allowStorageResize": false
+      }
+    },
+    "module": {}
+  },
+  "originType": "ORIGIN_LOCAL",
+  "storage": 0,
+  "projectAccessList": [],
+  "isImported": false,
+  "appInstCount": 0
+}

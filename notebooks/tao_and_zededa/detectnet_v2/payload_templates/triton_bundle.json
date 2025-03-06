@@ -1,0 +1,203 @@
+{
+  "name": "zededa-tritonserver-test",
+  "title": "zededa-tritonserver-test",
+  "description": "",
+  "networks": 2,
+  "drives": 1,
+  "cpus": 2,
+  "memory": 1048576,
+  "manifestJSON": {
+    "acKind": "PodManifest",
+    "acVersion": "1.2.0",
+    "deploymentType": "DEPLOYMENT_TYPE_STAND_ALONE",
+    "name": "zededa-tritonserver-test",
+    "owner": {
+      "user": "Autodeployed from TAO Toolkit",
+      "group": "",
+      "company": "Zededa Inc",
+      "website": "www.zededa.com",
+      "email": "cshari@zededa.com"
+    },
+    "description": "",
+    "cpuPinningEnabled": false,
+    "images": [
+      {
+        "imagename": "zededa-tritonserver-image",
+        "imageid": "57fb4f10-3a9d-4bf6-abbb-03bee7036482",
+        "imageformat": "CONTAINER",
+        "preserve": false,
+        "target": "",
+        "drvtype": "",
+        "params": [],
+        "readonly": false,
+        "volumelabel": "",
+        "ignorepurge": false,
+        "cleartext": true,
+        "mountpath": "/"
+      },
+      {
+        "imagename": "zededa-tritonserver-image",
+        "mountpath": "/models",
+        "cleartext": false,
+        "ignorepurge": true
+      }
+    ],
+    "interfaces": [
+      {
+        "name": "nic",
+        "directattach": false,
+        "acls": [
+          {
+            "matches": [
+              {
+                "type": "ip",
+                "value": "0.0.0.0/0"
+              }
+            ]
+          },
+          {
+            "matches": [
+              {
+                "type": "protocol",
+                "value": "tcp"
+              },
+              {
+                "type": "lport",
+                "value": "8000"
+              },
+              {
+                "type": "ip",
+                "value": "0.0.0.0/0"
+              }
+            ],
+            "actions": [
+              {
+                "portmap": true,
+                "portmapto": {
+                  "appPort": 8000
+                }
+              }
+            ]
+          },
+          {
+            "matches": [
+              {
+                "type": "protocol",
+                "value": "tcp"
+              },
+              {
+                "type": "lport",
+                "value": "8001"
+              },
+              {
+                "type": "ip",
+                "value": "0.0.0.0/0"
+              }
+            ],
+            "actions": [
+              {
+                "portmap": true,
+                "portmapto": {
+                  "appPort": 8001
+                }
+              }
+            ]
+          },
+          {
+            "matches": [
+              {
+                "type": "protocol",
+                "value": "tcp"
+              },
+              {
+                "type": "lport",
+                "value": "8002"
+              },
+              {
+                "type": "ip",
+                "value": "0.0.0.0/0"
+              }
+            ],
+            "actions": [
+              {
+                "portmap": true,
+                "portmapto": {
+                  "appPort": 8002
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "GPU",
+        "directattach": true,
+        "type": "IO_TYPE_HDMI",
+        "acls": null
+      }
+    ],
+    "desc": {
+      "category": "APP_CATEGORY_DATA_ANALYTICS",
+      "appCategory": "APP_CATEGORY_UNSPECIFIED",
+      "support": "",
+      "logo": {
+        "logo": "5197ffba-2ed5-11ef-8154-028e313eda78_logo"
+      },
+      "licenseList": {},
+      "agreementList": {}
+    },
+    "vmmode": "HV_NOHYPER",
+    "enablevnc": true,
+    "resources": [
+      {
+        "name": "resourceType",
+        "value": "Custom"
+      },
+      {
+        "name": "cpus",
+        "value": "2"
+      },
+      {
+        "name": "memory",
+        "value": "1048576.00"
+      }
+    ],
+    "configuration": {
+      "customConfig": {
+        "name": "CustomEntryPoint",
+        "add": false,
+        "override": false,
+        "allowStorageResize": false,
+        "fieldDelimiter": "$",
+        "template": "RVZFX0VDT19DTUQ9Im5vZGUgL2FwcC9saW51eC9ub2RlL2J1aWxkL2NsaS9saW51eC9ydW5uZXIuanMgLS1hcGkta2V5ICRBUElfS0VZJCAtLW1vbml0b3IgLS1ydW4taHR0cC1zZXJ2ZXIgMTMzNyAtLWltcHVsc2UtaWQgMSI=",
+        "variableGroups": [
+          {
+            "name": "Edge Impulse Variables",
+            "variables": [
+              {
+                "type": "",
+                "name": "API_KEY",
+                "label": "Edge Impulse API Key",
+                "maxLength": "",
+                "required": true,
+                "default": "",
+                "processInput": "",
+                "value": "",
+                "format": "VARIABLE_FORMAT_TEXT",
+                "encode": "FILE_ENCODING_UNSPECIFIED"
+              }
+            ],
+            "required": true,
+            "condition": null
+          }
+        ]
+      }
+    },
+    "module": {}
+  },
+  "originType": "ORIGIN_LOCAL",
+  "storage": 0,
+  "projectAccessList": [],
+  "isImported": false,
+  "appInstCount": 1
+}

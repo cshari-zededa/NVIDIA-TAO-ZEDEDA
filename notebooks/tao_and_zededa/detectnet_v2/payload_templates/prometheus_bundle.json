@@ -1,0 +1,159 @@
+{
+  "id": "84a7b860-8449-413c-9938-e5773b9edd91",
+  "name": "nvidia_triton_profile_prometheus",
+  "title": "nvidia_triton_profile_Prometheus",
+  "description": "",
+  "revision": {
+    "prev": "",
+    "curr": "4",
+    "createdAt": "2025-03-03T11:59:12.455452Z",
+    "createdBy": "cshari@acme.com",
+    "updatedAt": "2025-03-03T18:10:44.744310Z",
+    "updatedBy": "cshari@acme.com"
+  },
+  "networks": 2,
+  "drives": 1,
+  "cpus": 2,
+  "memory": 1048576,
+  "manifestJSON": {
+    "acKind": "PodManifest",
+    "acVersion": "1.2.0",
+    "deploymentType": "DEPLOYMENT_TYPE_STAND_ALONE",
+    "name": "nvidia_triton_profile_prometheus",
+    "owner": {
+      "user": "Audodeployed",
+      "group": "",
+      "company": "Zededa Inc",
+      "website": "www.zededa.com",
+      "email": "cshari@zededa.com"
+    },
+    "description": "",
+    "cpuPinningEnabled": false,
+    "images": [
+      {
+        "imagename": "nvidia_triton_profile_oci_prometheus_server",
+        "imageid": "e91bd450-a8f6-40b1-acc2-bc2935127d54",
+        "imageformat": "CONTAINER",
+        "preserve": false,
+        "target": "",
+        "drvtype": "",
+        "params": [],
+        "readonly": false,
+        "volumelabel": "",
+        "ignorepurge": false,
+        "cleartext": true,
+        "mountpath": "/"
+      }
+    ],
+    "interfaces": [
+      {
+        "name": "nic",
+        "directattach": false,
+        "acls": [
+          {
+            "matches": [
+              {
+                "type": "ip",
+                "value": "0.0.0.0/0"
+              }
+            ]
+          },
+          {
+            "matches": [
+              {
+                "type": "protocol",
+                "value": "tcp"
+              },
+              {
+                "type": "lport",
+                "value": "5085"
+              },
+              {
+                "type": "ip",
+                "value": "0.0.0.0/0"
+              }
+            ],
+            "actions": [
+              {
+                "portmap": true,
+                "portmapto": {
+                  "appPort": 5085
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "desc": {
+      "category": "APP_CATEGORY_DATA_ANALYTICS",
+      "appCategory": "APP_CATEGORY_UNSPECIFIED",
+      "support": "",
+      "logo": {
+        "logo": "5197ffba-2ed5-11ef-8154-028e313eda78_logo"
+      },
+      "licenseList": {},
+      "agreementList": {}
+    },
+    "vmmode": "HV_NOHYPER",
+    "enablevnc": true,
+    "resources": [
+      {
+        "name": "resourceType",
+        "value": "Custom"
+      },
+      {
+        "name": "cpus",
+        "value": "2"
+      },
+      {
+        "name": "memory",
+        "value": "1048576.00"
+      }
+    ],
+    "configuration": {
+      "customConfig": {
+        "name": "CustomConfigApp",
+        "add": true,
+        "override": false,
+        "allowStorageResize": false,
+        "fieldDelimiter": "$",
+        "template": "SE9TVE5BTUU9JEhPU1ROQU1FJA==",
+        "variableGroups": [
+          {
+            "name": "Variable-Group-0",
+            "variables": [
+              {
+                "type": "",
+                "name": "HOSTNAME",
+                "label": "HOSTNAME",
+                "maxLength": "",
+                "required": true,
+                "default": "GrafanaAlloy",
+                "processInput": "",
+                "value": "",
+                "format": "VARIABLE_FORMAT_TEXT",
+                "encode": "FILE_ENCODING_UNSPECIFIED"
+              }
+            ],
+            "required": true,
+            "condition": null
+          }
+        ]
+      }
+    },
+    "module": {}
+  },
+  "parentDetail": {
+    "idOfParentObject": "",
+    "versionOfParentObject": 0,
+    "updateAvailable": false,
+    "referenceExists": false
+  },
+  "originType": "ORIGIN_LOCAL",
+  "storage": 0,
+  "userDefinedVersion": "N/A",
+  "projectAccessList": [],
+  "isImported": false,
+  "appInstCount": 0
+}

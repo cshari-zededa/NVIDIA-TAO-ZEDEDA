@@ -1,0 +1,30 @@
+{
+  "id": "0aabef4e-503a-4316-9bcb-3ada22094e6d",
+  "name": "triton_test_image",
+  "title": "triton_test_image",
+  "description": "",
+  "revision": {
+    "prev": "",
+    "curr": "1",
+    "createdAt": "2025-02-24T06:31:46.129150Z",
+    "createdBy": "cshari@acme.com",
+    "updatedAt": "2025-02-24T06:31:46.129150Z",
+    "updatedBy": "cshari@acme.com"
+  },
+  "imageFormat": "CONTAINER",
+  "imageRelUrl": "triton_test_image",
+  "imageSha256": "",
+  "imageVersion": "",
+  "imageArch": "ARM64",
+  "imageStatus": "IMAGE_STATUS_CREATED",
+  "imageType": "IMAGE_TYPE_APPLICATION",
+  "datastoreId": "3cab4346-c46d-46ca-b699-65c998ae7dd9",
+  "imageError": "",
+  "imageLocal": "",
+  "originType": "ORIGIN_LOCAL",
+  "projectAccessList": [],
+  "datastoreIdList": [
+    "3cab4346-c46d-46ca-b699-65c998ae7dd9"
+  ],
+  "isLTS": false
+}
